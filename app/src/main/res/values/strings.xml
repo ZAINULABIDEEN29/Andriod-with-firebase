@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Mini Project</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="click_to_login">Click to Login</string>
+    <string name="click_to_register">Click to register</string>
+    <string name="logout">Logout</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="enter_your_email_to_receive_a_password_reset_link">Enter your email to receive a password reset link.</string>
+    <string name="send_reset_link">Send Reset Link</string>
+</resources>

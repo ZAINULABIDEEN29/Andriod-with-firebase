@@ -14,11 +14,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Material3.Light">
         <activity
+            android:name=".Reset_Password"
+            android:exported="true"
+           />
+        <activity
             android:name=".Forgot_Password"
             android:exported="false" />
-        <activity
-            android:name=".forgot_password"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".forgot_password"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".SignIn"
             android:exported="false"

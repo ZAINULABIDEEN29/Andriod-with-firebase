@@ -11,4 +11,7 @@
     <string name="forgot_password">Forgot Password</string>
     <string name="enter_your_email_to_receive_a_password_reset_link">Enter your email to receive a password reset link.</string>
     <string name="send_reset_link">Send Reset Link</string>
+    <string name="set_a_new_password">Set a New Password</string>
+    <string name="new_password">New Password</string>
+    <string name="update_password">Update Password</string>
 </resources>

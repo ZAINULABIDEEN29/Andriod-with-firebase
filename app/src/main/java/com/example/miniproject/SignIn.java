@@ -35,7 +35,7 @@ public class SignIn extends AppCompatActivity {
     @Override
     public void onStart() {
         super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
+
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if(currentUser != null){
             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
@@ -90,16 +90,10 @@ public class SignIn extends AppCompatActivity {
                                     startActivity(intent);
                                     finish();
 
-                                    // Sign in success, update UI with the signed-in user's information
-                                   // Log.d(TAG, "createUserWithEmail:success");
-                                   // FirebaseUser user = mAuth.getCurrentUser();
-                                   //  updateUI(user);
                                 } else {
-                                    // If sign in fails, display a message to the user.
-//                                    Log.w(TAG, "createUserWithEmail:failure", task.getException());
                                     Toast.makeText(SignIn.this, "Authentication failed.",
                                             Toast.LENGTH_SHORT).show();
-//                                    updateUI(null);
+//
                                 }
                             }
                         });

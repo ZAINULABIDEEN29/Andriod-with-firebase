@@ -37,7 +37,6 @@ public class Login extends AppCompatActivity {
 @Override
 public void onStart() {
     super.onStart();
-    // Check if user is signed in (non-null) and update UI accordingly.
     FirebaseUser currentUser = mAuth.getCurrentUser();
     if(currentUser != null){
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
@@ -68,7 +67,6 @@ public void onStart() {
         forgotPasswordTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // This is the crucial part that starts your new activity
                 Intent intent = new Intent(Login.this, Forgot_Password.class);
                 startActivity(intent);
             }
@@ -99,16 +97,8 @@ public void onStart() {
                                     Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                                     startActivity(intent);
                                     finish();
-                                    // Sign in success, update UI with the signed-in user's information
-//                                    Log.d(TAG, "signInWithEmail:success");
-//                                    FirebaseUser user = mAuth.getCurrentUser();
-//                                    updateUI(user);
                                 } else {
-                                    // If sign in fails, display a message to the user.
-                                  //  Log.w(TAG, "signInWithEmail:failure", task.getException());
-                                    Toast.makeText(Login.this, "Authentication failed.",
-                                            Toast.LENGTH_SHORT).show();
-//                                    updateUI(null);
+                                    Toast.makeText(Login.this, "Authentication failed.", Toast.LENGTH_SHORT).show();
                                 }
                             }
                         });
